@@ -7,10 +7,9 @@
 %%
 
 "\n"		{ return EOLN; }
-[a-z]		{ yylval = yytext[0]; return DECL; }
-[0-9]+		{ yylval = atoi(yytext); return INT; }
-"b"[a-z]	{ yylval = yytext[0]; return DECL_B; }
-"b"[0-1]	{ yylval = yytext[1]; return BOOL;}
+[a-z]+		{ yylval.stringval = yytext; return DECL; }
+[0-9]+		{ yylval.intval = atoi(yytext); return INT; }
+
 "+"			{ return PLUS; }
 "-"			{ return MINUS; }
 "*"			{ return MULT; }
@@ -18,7 +17,7 @@
 "PI"		{ return PI; }
 
 "="			{ return EQUAL; }
-"print" 	{ return PRINT; }
+"_print" 	{ return PRINT; }
 "=="		{ return EQUAL_L;}
 "&&"		{ return AND;}
 "!="		{return NOT;}
