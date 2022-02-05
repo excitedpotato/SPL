@@ -5,24 +5,17 @@ WARNING : Il y a encore un bug lors d'opération à deux variables. Le reste Fon
 
 Tous d’abord il faut compiler le projet :
 
-    • Pour compiler manuelemnt :
-          Il faut d’abord génréer le parser avec bison avec l’argument «-d » pour qu’il génre un fichier Header : $ bison -d simplY.y. Ensuite il faut gènérer le code avec Flex : $ flex simplL.l. Enfin, on compile le tous : 
+• Pour compiler manuelemnt :
+          Il faut d’abord génréer le parser avec bison avec l’argument «-d » pour qu’il génre un fichier Header : $ bison -d simplY.y. Ensuite il faut gènérer le 	    code avec Flex : $ flex simplL.l. Enfin, on compile le tous : 
           $ gcc lex.yy.c simplY.tab.c
 
-
-    • Pout compiler automatiquement :
-       	
-        ◦ Sous Windows : 
+• Pout compiler automatiquement :
+  	◦ Sous Windows : 
                		Il suffit d’éxecuter make.bat pour qque tous le projet sois compiler.
         ◦ Sous Linux : 
                		Il suffit d’éxecuter la commande $ make pour compiler le projet
                                    		
-              
-	
-
-
-
-
+ 
 
 Une fois que le programme est lancée ( $ ./a.out sous Unix et $ a.exe sous windows) on peut commencer à utiliser l’inérpréteur.
 
