@@ -3,7 +3,7 @@
 WARNING : Il y a encore un bug lors d'opération à deux variables. Le reste Fontionne.
 
 
-Tous d’abord il faut compiler le projet :
+Pour compiler le projet :
 
 • Pour compiler manuelemnt :
           Il faut d’abord génréer le parser avec bison avec l’argument «-d » pour qu’il génre un fichier Header : $ bison -d simplY.y. Ensuite il faut gènérer le 	    code avec Flex : $ flex simplL.l. Enfin, on compile le tous : 
